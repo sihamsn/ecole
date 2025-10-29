@@ -1,0 +1,90 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inscription</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inscription-conteneur">
+      <form>
+        <h1>Inscription</h1>
+        <div>
+          <label for="nom de l'utulisateur"
+            >Nom : <span style="color: red">*</span></label
+          >
+          <input type="text" id="nom" required />
+        </div>
+        <div>
+          <label for="Prénom"
+            >Prénom : <span style="color: red">*</span>
+          </label>
+          <input type="text" name="prenom" id="prenom" required />
+        </div>
+        <div>
+          <div>
+            <label for="sexe">sexe:<span style="color: red">*</span></label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="male"
+              name="sexe"
+              value="Masculin"
+              required
+            />
+            <label for="male">Masculin</label><br />
+          </div>
+          <div>
+            <input type="radio" id="female" name="sexe" value="Féminin" />
+            <label for="female">Féminin</label>
+          </div>
+        </div>
+        <div>
+          <label for="birthday"
+            >Date de naissance :<span style="color: red">*</span></label
+          >
+          <input type="date" id="birthday" name="birthday" required />
+        </div>
+        <div>
+          <label for="niveau d'etude">
+            niveau d'étude:<span style="color: red">*</span>
+          </label>
+          <select name="lg" id="langage" required>
+            <option value="">--Choisir -</option>
+            <option value="primaire">Primaire</option>
+            <option value="secondaire">secondaire</option>
+            <option value="Lycée">Lycée</option>
+          </select>
+        </div>
+        <div>
+          <label for="phone"
+            >Téléphone du tuteur:<span style="color: red">*</span></label
+          >
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="email"
+            >Email du tuteur:<span style="color: red">*</span></label
+          >
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="myfile">Photo d'étudiant :</label>
+          <input
+            type="file"
+            id="myfile"
+            name="myfile"
+            value="choisir un photo"
+          />
+        </div>
+
+        <input type="submit" id="eng" value="Enregistrer" />
+        <input type="reset" id="anl" value="réinitialiser" />
+      </form>
+    </div>
+  </body>
+</html>
